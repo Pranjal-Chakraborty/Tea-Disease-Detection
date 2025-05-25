@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="./URLicon.png" />
   <title>Tea Disease Detection - College Project</title>
   <script src="https://cdn.tailwindcss.com"></script>
@@ -24,6 +24,7 @@
               <a href="#features" class="text-white hover:text-green-200 text-lg">Features</a>
               <a href="#how-it-works" class="text-white hover:text-green-200 text-lg">How It Works</a>
               <a href="#about" class="text-white hover:text-green-200 text-lg">About</a>
+              <a href="#team" class="text-white hover:text-green-200 text-lg">Team</a>
               <a href="http://localhost:5173/" class="bg-white text-green-600 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-green-100">Try Now</a>
             </div>
           </div>
@@ -103,13 +104,47 @@
           <div class="container mx-auto px-6 max-w-5xl text-center">
             <h2 class="text-4xl font-bold mb-10">About the Project</h2>
             <p class="text-lg md:text-xl mb-10 text-gray-700 leading-relaxed">
-              Welcome to the Tea Leaf Disease Detection using Segmentation and Recommendations project! Our innovative approach leverages advanced segmentation techniques to accurately identify and analyze diseases affecting tea leaves. By assessing the severity of detected diseases, we provide tailored recommendations through a state-of-the-art Retrieval-Augmented Generation (RAG) model. Whether you are a farmer, researcher, or enthusiast, our platform offers valuable insights into disease prevention and management. Explore how technology can transform tea cultivation for a healthier future.
+              This project leverages deep learning and image segmentation to detect tea leaf diseases and analyze their severity. Using modern AI approaches like Retrieval-Augmented Generation (RAG), it provides tailored disease management recommendations. Built with the goal of supporting farmers, researchers, and agronomists, the platform simplifies early detection and treatment — promoting healthier tea cultivation and minimizing crop loss.
             </p>
             <a href="http://localhost:5173/" class="text-green-600 hover:underline text-lg font-semibold">Try the Prediction Tool</a>
           </div>
         </section>
       );
     }
+
+    function Team() {
+  const teamMembers = [
+    { name: "Devasmita Kundu", role: "ML Specialist", image: "./team/devasmita.jpg" },
+    { name: "Arya Chatterjee", role: "Backend Developer", image: "./team/arya.jpg" },
+    { name: "Smarat Ghosh", role: "Frontend Developer", image: "./team/piku.jpg" },
+    { name: "Jaya Sinha Mahapatra", role: "UI/UX Designer", image: "./team/jaya.jpg" },
+    { name: "Pranjal Title bhule gechi", role: "ML Specilaist", image: "./team/pranjal.jpg" },
+    { name: "Yash Thakur", role: "Documentation Head", image: "./team/yash.jpg" },
+  ];
+
+  return (
+    <section id="team" class="py-24 bg-white">
+      <div class="container mx-auto px-6 max-w-7xl text-center">
+        <h2 class="text-4xl font-bold mb-12">Meet Our Team</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+          {teamMembers.map((member, index) => (
+            <div key={index} class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+              <img
+                src={member.image}
+                alt={member.name}
+                class="w-32 h-32 mx-auto rounded-full object-cover border-4 border-green-500 mb-4"
+              />
+              <h4 class="text-xl font-semibold">{member.name}</h4>
+              <p class="text-green-600 font-medium">{member.role}</p>
+              <p class="text-sm text-gray-500">CSE 2025</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 
     function CTA() {
       return (
@@ -136,6 +171,17 @@
     }
 
     function App() {
+      React.useEffect(() => {
+        const track = document.getElementById("carousel-track");
+        let position = 0;
+        const slideWidth = 270; // width + gap of each card
+
+        setInterval(() => {
+          position = (position + 1) % 6;
+          track.style.transform = `translateX(-${position * slideWidth}px)`;
+        }, 2000);
+      }, []);
+
       return (
         <div>
           <Navbar />
@@ -143,13 +189,14 @@
           <Features />
           <HowItWorks />
           <About />
+          <Team />
           <CTA />
           <Footer />
         </div>
       );
     }
 
-    ReactDOM.render(<App />, document.getElementById('root'));
+    ReactDOM.render(<App />, document.getElementById("root"));
   </script>
 </body>
 </html>
