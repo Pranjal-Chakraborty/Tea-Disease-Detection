@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +10,12 @@
   <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/babel-standalone@6.26.0/babel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Dt8fP0qL9QzT5W5mGkQXgYXUpHpxYME5z3XkkkLOHyDUtU7EFORbiKrkpErvh9Hwl3FvFc0YBQeJ3KJptCF/Ng=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
+
 <body class="bg-gray-100 text-gray-800 font-sans">
   <div id="root"></div>
 
@@ -87,9 +93,9 @@
           <div class="container mx-auto px-6 max-w-7xl text-center">
             <h2 class="text-4xl font-bold mb-10">How It Works</h2>
             <div class="flex justify-center">
-              <img 
-                src="./flowchart.jpg" 
-                alt="Tea Disease Detection Flowchart" 
+              <img
+                src="./flowchart.jpg"
+                alt="Tea Disease Detection Flowchart"
                 class="max-w-full h-auto rounded-lg shadow-lg"
               />
             </div>
@@ -113,37 +119,92 @@
     }
 
     function Team() {
-  const teamMembers = [
-    { name: "Devasmita Kundu", role: "ML Specialist", image: "./team/devasmita.jpg" },
-    { name: "Sir Arya Chatterjee (GOAT)", role: "Backend Developer", image: "./team/arya.jpg" },
-    { name: "Smarat Ghosh", role: "Frontend Developer", image: "./team/piku.jpg" },
-    { name: "Jaya Sinha Mahapatra", role: "UI/UX Designer", image: "./team/jaya.jpg" },
-    { name: "Pranjal Title bhule gechi", role: "ML Specilaist", image: "./team/pranjal.jpg" },
-    { name: "Yash Thakur", role: "Documentation Head", image: "./team/yash.jpg" },
-  ];
+      const teamMembers = [
+        {
+          name: "Devasmita Kundu",
+          role: "ML specialist",
+          image: "./team/devasmita.jpg",
+          linkedin: "https://www.linkedin.com/in/luna-skywalker"  ,
+          github: "https://github.com/Luna-Skywalker" ,
+          instagram: "#",
+        },
+        {
+          name: "Samrat Ghosh",
+          role: "Frontend Developer",
+          image: "./team/piku.jpg",
+          linkedin: "https://www.linkedin.com/in/samratghosh490/",
+          github: "https://github.com/samratghosh291",
+          instagram: "https://www.instagram.com/piku_samrat/",
+        },
+        {
+          name: "Jaya Sinha Mahapatra",
+          role: "UI/UX Designer",
+          image: "./team/jaya.jpg",
+          linkedin: "#",
+          github: "#",
+          instagram: "#",
+        },
+        {
+          name: "Arya Chatterjee",
+          role: "ML Specialist (Segmentation)",
+          image: "./team/arya_sumit.jpeg",
+          linkedin: "https://www.linkedin.com/in/aryachatterjee8831/",
+          github: "https://github.com/arya8831",
+          instagram: "https://www.instagram.com/_arya_8831?igsh=MWNzb25xcHRtdDBoYQ==",
+        },
+        {
+          name: "Pranjal Chakraborty",
+          role: "ML Specialist (RAG)",
+          image: "./team/pranjal.jpg",
+          linkedin: "https://www.linkedin.com/in/pranjalchakraborty",
+          github: "https://github.com/Pranjal-Chakraborty",
+          instagram: "https://www.instagram.com/impulse_8670",
+        },
+        {
+          name: "Yash Thakur",
+          role: "Research and Documentation",
+          image: "./team/yash.jpg",
+          linkedin: "#",
+          github: "#",
+          instagram: "#",
+        },
+      ];
 
-  return (
-    <section id="team" class="py-24 bg-white">
-      <div class="container mx-auto px-6 max-w-7xl text-center">
-        <h2 class="text-4xl font-bold mb-12">Meet Our Team</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
-          {teamMembers.map((member, index) => (
-            <div key={index} class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition duration-300">
-              <img
-                src={member.image}
-                alt={member.name}
-                class="w-32 h-32 mx-auto rounded-full object-cover border-4 border-green-500 mb-4"
-              />
-              <h4 class="text-xl font-semibold">{member.name}</h4>
-              <p class="text-green-600 font-medium">{member.role}</p>
-              <p class="text-sm text-gray-500">CSE 2025</p>
+      return (
+        <section id="team" className="py-24 bg-white">
+          <div className="container mx-auto px-6 max-w-7xl text-center">
+            <h2 className="text-4xl font-bold mb-12">Our Team</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+              {teamMembers.map((member, index) => (
+                <div key={index} className="bg-gray-100 p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="w-32 h-32 mx-auto rounded-full border-4 border-green-500 object-cover mb-4"
+                  />
+                  <h4 className="text-xl font-semibold">{member.name}</h4>
+                  <p className="text-gray-600 mb-3">{member.role}</p>
+                  <p className="text-sm text-gray-500 mb-4">CSE 2025</p>
+                  <div className="flex justify-center gap-4">
+                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-800 text-xl">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href={member.github} target="_blank" rel="noopener noreferrer" className="text-gray-800 hover:text-black text-xl">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href={member.instagram} target="_blank" rel="noopener noreferrer" className="text-pink-500 hover:text-pink-600 text-xl">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </div>
+
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
+          </div>
+        </section>
+      );
+    }
+
 
 
     function CTA() {
@@ -199,4 +260,5 @@
     ReactDOM.render(<App />, document.getElementById("root"));
   </script>
 </body>
+
 </html>
