@@ -1,7 +1,0 @@
-fastapi
-uvicorn
-torch
-timm
-Pillow
-huggingface_hub
-python-multipart
