@@ -1,4 +1,4 @@
-# Tea Tea Plant Disease Detection
+# Tea Plant Disease Detection
 This section discusses:
 
 - How the model detects diseases
