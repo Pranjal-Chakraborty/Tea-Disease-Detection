@@ -3,7 +3,7 @@
 
 **Tea Leaf Disease Classification** is a FastAPI-based application that uses a deep learning model to analyze tea leaf images and classify them into healthy or diseased categories. This tool aims to assist farmers, researchers, and agricultural professionals in identifying leaf diseases efficiently and effectively.
 
----
+/
 
 ## 🚀 Features
 
@@ -13,7 +13,7 @@
 - **Efficient Processing**: Leverages GPU (if available) for fast predictions.
 - **Error Handling**: Provides clear error messages for invalid inputs or corrupted files.
 
----
+/
 
 ## 🛠️ How It Works
 
@@ -27,7 +27,7 @@
 4. **Response**:
    - A JSON response includes the predicted class and the probability scores for all classes.
 
----
+/
 
 ## 🛠️ Installation
 
@@ -66,7 +66,7 @@ Ensure the following are installed on your machine:
    http://localhost:53125/analyze
    ```
 
----
+/
 
 ## 📖 API Documentation
 
@@ -106,7 +106,7 @@ Ensure the following are installed on your machine:
   - Image size: 224x224.
   - Normalization: Mean = (0.5, 0.5, 0.5), Std = (0.5, 0.5, 0.5).
 
----
+/
 
 ## 🧪 Testing
 
@@ -114,7 +114,7 @@ You can test the application by uploading sample tea leaf images. To ensure opti
 - Use clear images with good lighting.
 - Avoid blurry or distorted files.
 
----
+/
 
 ## 📂 Project Structure
 
@@ -128,7 +128,7 @@ tea-leaf-disease-classification/
 │   └── config.json
 ```
 
----
+/
 
 ## 🤝 Contributing
 
@@ -140,7 +140,7 @@ Contributions are welcome! Please fork the repository, make your changes, and su
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
----
+/
 
 ## 💡 Acknowledgments
 
@@ -148,4 +148,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - **[TIMM](https://github.com/huggingface/timm)** for providing the ConvNeXt architecture.
 - **FastAPI** for the rapid and efficient web API development.
 
----
+/
