@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+torch
+timm
+torchvision
+Pillow
+numpy
+opencv-python
+ultralytics
+google-genai
+astrapy
+python-dotenv
+cv2
+
