@@ -34,8 +34,8 @@ function App() {
   const [analyzeResult, setAnalyzeResult] = useState(null);
   const [ragResult, setRagResult] = useState(null);
 
-  const analyzeUrl = "https://8b88-27-131-210-65.ngrok-free.app/analyze";
-  const ragUrl = "https://f955-103-77-138-82.ngrok-free.app/generate";
+  const analyzeUrl = "https://54f7-27-131-210-65.ngrok-free.app/analyze";
+  const ragUrl = "https://9504-27-131-210-65.ngrok-free.app/generate";
 
   const resetState = () => {
     setError(null);
