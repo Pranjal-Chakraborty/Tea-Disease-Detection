@@ -4,7 +4,6 @@
 ![Python](https://img.shields.io/badge/Python-3.8+-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-✔️-green)
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-✔️-orange)
-![License](https://img.shields.io/github/license/tea-leaf-segmentation)
 ![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
 
 > **Segment and analyze tea leaf diseases with precision using YOLOv8 and advanced severity calculation techniques!**
