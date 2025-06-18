@@ -5,7 +5,6 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-✔️-green)
 ![GeminiAPI](https://img.shields.io/badge/Google_Gemini-✔️-orange)
 ![AstraDB](https://img.shields.io/badge/Astra_DB-✔️-purple)
-![License](https://img.shields.io/github/license/yourusername/rag-bot)
 ![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
 
 > **A FastAPI-based chatbot leveraging Retrieval-Augmented Generation (RAG) with fallback mechanisms for enriched and reliable responses.**
