@@ -50,7 +50,7 @@ An end-to-end automated system that:
 
 ### 🔍 Disease Detection
 **ConvNeXt Model**
-- 85% accuracy
+- 98% accuracy
 - 7 disease types
 - Real-time analysis
 
