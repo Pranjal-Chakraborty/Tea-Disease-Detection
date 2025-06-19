@@ -68,6 +68,9 @@ async def generate(request: Request):
 
             As an AI assistant, provide general advice on how to maintain the health of tea plants. 
             Include tips on watering, pruning, fertilization, sunlight exposure, and disease prevention best practices.
+            Provide a response within 400 words and give response like a plant healthcare professional.
+            Answer should be easy to understand by a non-technical user like farmers and plants caretakers.
+            Response should be academically correct and to the point do not greet or interact with the user.
             """.strip()
 
             try:
@@ -118,7 +121,10 @@ async def generate(request: Request):
             Severity: {severity}%
             Severity Classification: {severity_class}
 
-            Based on this information, generate a detailed and human-like response about the disease, including possible prevention methods if known. If the disease is not known, provide general advice on managing tea plant health.
+            Based on this information, generate a detailed and human-like response about the disease, including possible prevention methods.
+            Provide a response within 500 words and give response like a plant healthcare professional.
+            Answer should be easy to understand by a non-technical user like farmers and plants caretakers.
+            Response should be academically correct and to the point do not greet or interact with the user.
             """.strip()
 
             try:
@@ -140,6 +146,9 @@ async def generate(request: Request):
 
         response_prompt = f"""
         You are an AI assistant. Use the context below to answer the user's question accurately.
+        Provide a response within 500 words and give response like a plant healthcare professional.
+        Answer should be easy to understand by a non-technical user like farmers and plants caretakers.
+        Response should be academically correct and to the point do not greet or interact with the user.
 
         ------------------------
         Context:
