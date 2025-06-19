@@ -16,6 +16,7 @@
 
 ---
 
+
 ## 🌟 Project Overview
 
 <details>
@@ -41,6 +42,8 @@ An end-to-end automated system that:
 </details>
 
 ---
+## 🌐 Live Deployment✔
+Our project is now live at **[Krishi Raksha](https://pranjal-chakraborty.github.io/Tea-Disease-Detection/)**
 
 ## 🚀 Key Features
 
@@ -83,13 +86,13 @@ An end-to-end automated system that:
 ```mermaid
 graph TD
     A[Start<br><span style="color:gray">Input Image</span>] --> B[Image Preprocessing<br><span style="color:gray"></span>]
-    B --> C[Disease Classification System<br><span style="color:gray">(ConvNeXt)</span>]
+    B --> C[Disease Classification System<br><span style="color:gray">ConvNeXt</span>]
     C --> D{Is the leaf Healthy?<br><span style="color:gray"></span>}
-    D -->|Yes| E[Recommendation System<br><span style="color:gray">(RAG)</span><br>Display that the leaf is healthy. Leaf boundary and yield increase on yield]
+    D -->|Yes| E[Recommendation System<br><span style="color:gray">RAG</span><br>Display that the leaf is healthy. Leaf boundary and yield increase on yield]
     D -->|No| F[Disease Severity Analysis<br><span style="color:gray"></span>]
     E --> I
-    F --> G[Segmentation System<br><span style="color:gray">(YOLOv8)</span>]
-    G --> H[Recommendation System<br><span style="color:gray">(RAG)</span><br>Display the name of disease, affected area, it's severity and treatment recommendation]
+    F --> G[Segmentation System<br><span style="color:gray">YOLOv8</span>]
+    G --> H[Recommendation System<br><span style="color:gray">RAG</span><br>Display the name of disease, affected area, it's severity and treatment recommendation]
     H --> I[Stop<br><span style="color:gray"></span>]
 
     %% Styling to match the original diagram's color scheme with deep black font
