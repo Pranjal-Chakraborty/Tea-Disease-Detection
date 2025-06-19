@@ -82,19 +82,26 @@ An end-to-end automated system that:
 
 ```mermaid
 graph TD
-    A[📱 User Uploads Image] --> B[🔧 Image Preprocessing]
-    B --> C{🧠 ConvNeXt Classification}
-    C -->|🦠 Diseased| D[🎯 YOLOv8 Segmentation]
-    C -->|✅ Healthy| E[🌿 Healthy Detection]
-    D --> F[📊 Severity Assessment]
-    F --> G[🤖 RAG Recommendations]
-    E --> G
-    G --> H[📋 Results Display]
-    
-    style A fill:#e1f5fe
-    style C fill:#fff3e0
-    style G fill:#f3e5f5
-    style H fill:#e8f5e8
+    A[Start<br><span style="color:gray">Input Image</span>] --> B[Image Preprocessing<br><span style="color:gray"></span>]
+    B --> C[Disease Classification System<br><span style="color:gray">ConvNeXt</span>]
+    C --> D{Is the leaf Healthy?<br><span style="color:gray"></span>}
+    D -->|Yes| E[Recommendation System<br><span style="color:gray">RAG</span><br>Display that the leaf is healthy. Leaf boundary and yield increase on yield]
+    D -->|No| F[Disease Severity Analysis<br><span style="color:gray"></span>]
+    E --> I
+    F --> G[Segmentation System<br><span style="color:gray">YOLOv8</span>]
+    G --> H[Recommendation System<br><span style="color:gray">RAG</span><br>Display the name of disease, affected area, it's severity and treatment recommendation]
+    H --> I[Stop<br><span style="color:gray"></span>]
+
+    %% Styling to match the original diagram's color scheme with deep black font
+    style A fill:#ef9a9a,stroke:#d32f2f,stroke-width:2px,color:#000000
+    style B fill:#bbdefb,stroke:#1976d2,stroke-width:2px,color:#000000
+    style C fill:#bbdefb,stroke:#1976d2,stroke-width:2px,color:#000000
+    style D fill:#c8e6c9,stroke:#388e3c,stroke-width:2px,color:#000000
+    style E fill:#fff9c4,stroke:#f9a825,stroke-width:2px,color:#000000
+    style F fill:#bbdefb,stroke:#1976d2,stroke-width:2px,color:#000000
+    style G fill:#bbdefb,stroke:#1976d2,stroke-width:2px,color:#000000
+    style H fill:#fff9c4,stroke:#f9a825,stroke-width:2px,color:#000000
+    style I fill:#ef9a9a,stroke:#d32f2f,stroke-width:2px,color:#000000
 ```
 
 ---
